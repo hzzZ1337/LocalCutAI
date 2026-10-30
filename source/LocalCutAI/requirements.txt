@@ -1,0 +1,5 @@
+PySide6>=6.8,<7
+faster-whisper>=1.1.0
+# faster-whisper 1.2.1 uses av.open(metadata_errors=...), removed in newer PyAV versions.
+av>=11,<18
+piper-tts>=1.3.0,<2.0
