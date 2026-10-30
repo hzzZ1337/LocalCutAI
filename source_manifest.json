@@ -1,0 +1,112 @@
+{
+  "files": [
+    {
+      "label": "Aplikacja · licencja MIT",
+      "path": "source/LocalCutAI/LICENSE"
+    },
+    {
+      "label": "Aplikacja · instrukcja EXE",
+      "path": "source/LocalCutAI/README_EXE_PL.md"
+    },
+    {
+      "label": "Aplikacja · instrukcja PL",
+      "path": "source/LocalCutAI/README_PL.md"
+    },
+    {
+      "label": "Aplikacja · licencje zależności",
+      "path": "source/LocalCutAI/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "label": "Aplikacja · punkt wejścia",
+      "path": "source/LocalCutAI/main.py"
+    },
+    {
+      "label": "Aplikacja · zależności",
+      "path": "source/LocalCutAI/requirements.txt"
+    },
+    {
+      "label": "Aplikacja · instalator",
+      "path": "source/LocalCutAI/install.bat"
+    },
+    {
+      "label": "Aplikacja · uruchamianie",
+      "path": "source/LocalCutAI/run.bat"
+    },
+    {
+      "label": "Aplikacja · budowanie EXE",
+      "path": "source/LocalCutAI/build_exe.bat"
+    },
+    {
+      "label": "Aplikacja · paczka wydania",
+      "path": "source/LocalCutAI/make_release_zip.bat"
+    },
+    {
+      "label": "Aplikacja · wykrywanie Pythona",
+      "path": "source/LocalCutAI/find_python.ps1"
+    },
+    {
+      "label": "Aplikacja · moduł app",
+      "path": "source/LocalCutAI/app/__init__.py"
+    },
+    {
+      "label": "Aplikacja · rozpoznawanie mowy",
+      "path": "source/LocalCutAI/app/ai.py"
+    },
+    {
+      "label": "Aplikacja · napisy i animacje",
+      "path": "source/LocalCutAI/app/captions.py"
+    },
+    {
+      "label": "Aplikacja · interfejs",
+      "path": "source/LocalCutAI/app/main_window.py"
+    },
+    {
+      "label": "Aplikacja · lektor AI",
+      "path": "source/LocalCutAI/app/tts.py"
+    },
+    {
+      "label": "Aplikacja · operacje wideo",
+      "path": "source/LocalCutAI/app/video_ops.py"
+    },
+    {
+      "label": "Aplikacja · zadania w tle",
+      "path": "source/LocalCutAI/app/worker.py"
+    },
+    {
+      "label": "Aplikacja · ikona Windows",
+      "path": "source/LocalCutAI/assets/LocalCutAI.ico"
+    },
+    {
+      "label": "Aplikacja · logo SVG",
+      "path": "source/LocalCutAI/assets/localcutai-logo.svg"
+    },
+    {
+      "label": "WWW · strona główna HTML",
+      "path": "index.html"
+    },
+    {
+      "label": "WWW · centrum pobierania HTML",
+      "path": "downloads.html"
+    },
+    {
+      "label": "WWW · style CSS",
+      "path": "style.css"
+    },
+    {
+      "label": "WWW · skrypty strony",
+      "path": "script.js"
+    },
+    {
+      "label": "WWW · logika pobierania",
+      "path": "download-page.js"
+    },
+    {
+      "label": "WWW · instrukcja publikacji",
+      "path": "README_PL.md"
+    },
+    {
+      "label": "WWW · informacje o licencjach",
+      "path": "THIRD_PARTY_NOTICES.md"
+    }
+  ]
+}

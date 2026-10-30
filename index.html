@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a12">
+  <meta name="github-repo" content="" data-note="Ustaw owner/repo, aby włączyć licznik pobrań z GitHub Releases">
+  <meta name="description" content="LocalCut AI Beta — lokalny asystent montażu wideo na Windows. Polskie napisy, edytor tekstu i czasu, lektor AI, animacje napisów oraz eksport MP4.">
+  <meta property="og:title" content="LocalCut AI — lokalny montaż wideo">
+  <meta property="og:description" content="Polskie napisy AI, lektor, edycja czasu i eksport MP4. Open source i lokalnie na Windows.">
+  <meta property="og:image" content="screenshots/real-app-overview.png">
+  <title>LocalCut AI — lokalny montaż wideo · BETA</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#start" aria-label="LocalCut AI — strona główna">
+      <img src="assets/localcutai-logo.svg" alt="" width="38" height="38">
+      <span>LocalCut <b>AI</b></span><span class="beta-mark">BETA</span>
+    </a>
+    <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav class="nav" id="nav" aria-label="Główna nawigacja">
+      <a href="#funkcje">Funkcje</a>
+      <a href="#podglad">Podgląd</a>
+      <a href="#pobierz">Pobierz</a>
+      <a href="#source">Source</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-download" href="#pobierz">Wersja beta <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="start">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> LOKALNY ASYSTENT MONTAŻU WIDEO <span class="beta-pill">W FAZIE BETA</span></div>
+        <h1>Montaż, który<br><span>zaczyna się od AI.</span></h1>
+        <p class="hero-lede">Twórz polskie napisy, poprawiaj ich tekst i synchronizację, generuj lektora AI i eksportuj gotowe MP4. LocalCut AI działa na Twoim komputerze — bez wysyłania nagrań na serwer tej strony.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="downloads.html">
+            <span class="windows-mark">⊞</span><span>Pobierz wersję beta<small>Windows 10/11 · 64-bit</small></span><span class="button-arrow">↓</span>
+          </a>
+          <a class="button secondary" href="#source"><span class="source-braces">{ }</span> Zobacz kod źródłowy</a>
+        </div>
+        <p class="download-status" id="download-status" role="status">Otwórz centrum pobierania i pobierz dwa archiwa ZIP.</p>
+        <div class="trust-row"><span><i>✓</i> Tryb lokalny</span><span><i>✓</i> Obsługa CPU</span><span><i>✓</i> Otwarty kod</span></div>
+        <div class="download-counter" aria-live="polite"><div class="counter-symbol">↓</div><div class="counter-number-wrap"><strong id="download-count">—</strong><span>pobrań aplikacji</span></div><small id="download-count-note">Licznik włączy się po podłączeniu publicznego GitHub Release.</small></div>
+      </div>
+      <div class="hero-visual reveal reveal-delay" aria-label="Podgląd interfejsu LocalCut AI">
+        <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+        <div class="screenshot-frame">
+          <div class="browser-chrome"><div class="chrome-dots"><i></i><i></i><i></i></div><span>LocalCut AI — lokalny montaż filmów</span><span class="chrome-beta">BETA</span></div>
+          <img src="screenshots/real-app-overview.png" alt="Podgląd interfejsu LocalCut AI: wybór filmu, ustawienia napisów i narzędzia montażowe" class="hero-screenshot">
+          <div class="frame-reflection"></div>
+        </div>
+        <div class="float-chip chip-caption"><span class="chip-icon cyan-icon">CC</span><span><b>Napisy AI</b><small>Tekst + synchronizacja</small></span><span class="chip-check">✓</span></div>
+        <div class="float-chip chip-voice"><span class="chip-icon purple-icon">♫</span><span><b>Lektor AI</b><small>Eksport ścieżki WAV</small></span><span class="equalizer"><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+    </section>
+
+    <section class="ticker-band" aria-label="Najważniejsze cechy">
+      <div class="ticker-track"><span>POLSKIE NAPISY AI</span><b>✦</b><span>EDYTOR TEKSTU I CZASU</span><b>✦</b><span>LEKTOR AI</span><b>✦</b><span>ANIMOWANE NAPISY</span><b>✦</b><span>EKSPORT MP4</span><b>✦</b><span>LOCAL FIRST</span><b>✦</b><span>POLSKIE NAPISY AI</span><b>✦</b><span>EDYTOR TEKSTU I CZASU</span><b>✦</b><span>LEKTOR AI</span><b>✦</b><span>ANIMOWANE NAPISY</span><b>✦</b><span>EKSPORT MP4</span><b>✦</b><span>LOCAL FIRST</span><b>✦</b></div>
+    </section>
+
+    <section class="section container" id="funkcje">
+      <div class="section-heading reveal"><div><div class="eyebrow">NARZĘDZIA W JEDNYM MIEJSCU</div><h2>Więcej tworzenia.<br><span>Mniej powtarzalnej pracy.</span></h2></div><p>LocalCut AI skupia typowe zadania przy przygotowaniu filmów — od transkrypcji po gotowy plik wideo.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><div class="feature-icon cyan">CC</div><div class="feature-topline">01 / TRANSKRYPCJA</div><h3>Automatyczne polskie napisy</h3><p>Rozpoznawanie mowy i eksport zsynchronizowanego tekstu do SRT, ASS i JSON.</p><div class="feature-bottom"><span>SRT</span><span>ASS</span><span>JSON</span></div></article>
+        <article class="feature-card reveal reveal-delay-1"><div class="feature-icon violet">✎</div><div class="feature-topline">02 / EDYCJA</div><h3>Popraw tekst i czas</h3><p>Poprawiaj błędne słowa, zmieniaj START i KONIEC, dodawaj lub usuwaj wybrane napisy.</p><div class="feature-bottom"><span>START / KONIEC</span><span>EDYCJA</span></div></article>
+        <article class="feature-card reveal reveal-delay-2"><div class="feature-icon blue">✦</div><div class="feature-topline">03 / WYGLĄD</div><h3>Napisy z animacjami</h3><p>Dobieraj czcionkę, rozmiar, kolory, podświetlanie słów i animacje. Wypal napisy w MP4.</p><div class="feature-bottom"><span>POP-IN</span><span>FADE</span><span>SLIDE</span></div></article>
+        <article class="feature-card reveal"><div class="feature-icon purple">♫</div><div class="feature-topline">04 / AUDIO</div><h3>Lektor AI</h3><p>Wybieraj polskie głosy, edytuj tekst fragmentów i generuj ścieżkę audio oraz film z podmienioną mową.</p><div class="feature-bottom"><span>WAV</span><span>MP4</span></div></article>
+        <article class="feature-card reveal reveal-delay-1"><div class="feature-icon orange">◷</div><div class="feature-topline">05 / CIĘCIE</div><h3>Usuwanie ciszy</h3><p>Wykrywaj dłuższe pauzy i twórz skróconą wersję nagrania bez ręcznego wycinania każdej przerwy.</p><div class="feature-bottom"><span>FFMPEG</span><span>MP4</span></div></article>
+        <article class="feature-card reveal reveal-delay-2"><div class="feature-icon green">▣</div><div class="feature-topline">06 / SHORT FORM</div><h3>Fragmenty i Shortsy</h3><p>Twórz propozycje krótszych fragmentów i eksportuj pionowe klipy w proporcji 9:16.</p><div class="feature-bottom"><span>9:16</span><span>SHORTS</span></div></article>
+      </div>
+    </section>
+
+    <section class="privacy-band">
+      <div class="container privacy-inner reveal">
+        <div class="privacy-symbol"><span class="privacy-lock">⌂</span><span class="privacy-ring"></span></div>
+        <div class="privacy-copy"><div class="eyebrow">LOCAL FIRST · TWOJE PLIKI U CIEBIE</div><h2>Twoje nagrania.<br><span>Twój komputer.</span></h2><p>Strona internetowa jest statyczna i nie wysyła plików wideo. Funkcje lokalne przetwarzają media na komputerze użytkownika. Pierwsze uruchomienie może wymagać pobrania modeli AI i zależności.</p></div>
+        <div class="privacy-stamp"><span>LOCAL</span><b>FIRST</b><small>BEZ KONTA · BEZ CHMURY STRONY</small></div>
+      </div>
+    </section>
+
+    <section class="section container showcase-section" id="podglad">
+      <div class="section-heading reveal"><div><div class="eyebrow">ZOBACZ, JAK WYGLĄDA</div><h2>Interfejs bez<br><span>zbędnego chaosu.</span></h2></div><p>To autentyczne fragmenty zrzutu okna LocalCut AI przekazanego przez autora. Centralna część pierwotnego zrzutu była zasłonięta oknem dialogowym, więc pokazujemy wyłącznie widoczne obszary. Prywatne ścieżki plików zostały zasłonięte. Kliknij obraz, aby powiększyć.</p></div>
+      <div class="showcase-grid real-screenshot-grid">
+        <button class="showcase-card reveal" data-lightbox="screenshots/real-app-overview.png" aria-label="Powiększ kolaż prawdziwych fragmentów interfejsu"><span class="showcase-image-wrap"><img src="screenshots/real-app-overview.png" alt="Kolaż z prawdziwych fragmentów okna LocalCut AI z komputera autora"><span class="zoom-indicator">↗ Powiększ</span></span><span class="showcase-caption"><span><b>Interfejs LocalCut AI</b><small>Autentyczne fragmenty zrzutu ekranu</small></span><span class="caption-number">01</span></span></button>
+        <button class="showcase-card reveal reveal-delay-1" data-lightbox="screenshots/real-app-left-panel.png" aria-label="Powiększ lewy panel prawdziwego interfejsu"><span class="showcase-image-wrap"><img src="screenshots/real-app-left-panel.png" alt="Prawdziwy fragment z lewej strony okna aplikacji: wybór filmu, ustawienia napisów i przycisk generowania"><span class="zoom-indicator">↗ Powiększ</span></span><span class="showcase-caption"><span><b>Wybór filmu i napisy</b><small>Fragment z rzeczywistego okna Windows</small></span><span class="caption-number">02</span></span></button>
+        <button class="showcase-card reveal reveal-delay-2" data-lightbox="screenshots/real-app-right-controls.png" aria-label="Powiększ panel przycisków rzeczywistego interfejsu"><span class="showcase-image-wrap"><img src="screenshots/real-app-right-controls.png" alt="Prawdziwy fragment prawego panelu LocalCut AI z kontrolkami stylu i przyciskiem Shorts"><span class="zoom-indicator">↗ Powiększ</span></span><span class="showcase-caption"><span><b>Ustawienia i narzędzia</b><small>Fragment rzeczywistego interfejsu</small></span><span class="caption-number">03</span></span></button>
+      </div>
+    </section>
+
+    <section class="section container process-section" id="jak-dziala">
+      <div class="section-heading reveal"><div><div class="eyebrow">JAK ZACZĄĆ</div><h2>Od nagrania do<br><span>gotowego klipu.</span></h2></div><p>Wersja beta jest rozwijana. Przed publikacją dłuższego materiału warto sprawdzić wynik na krótkim fragmencie.</p></div>
+      <div class="steps"><div class="step reveal"><span class="step-number">01</span><div class="step-line"></div><h3>Wczytaj film</h3><p>Wybierz materiał MP4, MKV lub MOV.</p></div><div class="step reveal reveal-delay-1"><span class="step-number">02</span><div class="step-line"></div><h3>Wybierz narzędzie</h3><p>Uruchom napisy, edytor lub lektora AI.</p></div><div class="step reveal reveal-delay-2"><span class="step-number">03</span><div class="step-line"></div><h3>Popraw szczegóły</h3><p>Dopasuj tekst, czas, wygląd i brzmienie.</p></div><div class="step reveal reveal-delay-3"><span class="step-number">04</span><div class="step-line"></div><h3>Eksportuj wynik</h3><p>Zapisz MP4 i sprawdź przed publikacją.</p></div></div>
+    </section>
+
+    <section class="download-section container" id="pobierz">
+      <div class="download-panel reveal"><div class="download-copy"><div class="eyebrow">LOCALCUT AI · WINDOWS BETA</div><h2>Przetestuj lokalny<br><span>workflow montażu.</span></h2><p>Pobierz aplikację Windows oraz osobny pakiet FFmpeg i FFprobe. Rozpakuj oba archiwa do jednego folderu — narzędzia wideo będą wtedy dostępne obok LocalCutAI.exe. Nie trzeba osobno instalować Pythona; modele AI pobiorą się przy pierwszym użyciu.</p><div class="download-actions"><a class="button primary" href="downloads.html"><span class="windows-mark">⊞</span><span>Pobierz wersję beta<small>Windows 10/11 · 64-bit</small></span><span class="button-arrow">↓</span></a><a class="button secondary" href="downloads/LocalCutAI-full-source.zip" download><span class="source-braces">{ }</span><span>Kod aplikacji + WWW<small>Pełne źródła · ZIP</small></span><span class="button-arrow">↓</span></a></div><p class="download-status bottom-status" id="download-status-bottom" role="status">Przejdź do centrum pobierania, aby pobrać aplikację i narzędzia wideo.</p><div class="download-meta"><span>✓ Kod dostępny</span><span>✓ Bez konta</span><span>✓ Windows 10/11</span></div></div><div class="download-art"><div class="art-orbit art-orbit-a"></div><div class="art-orbit art-orbit-b"></div><img src="assets/localcutai-logo.svg" alt="Logo LocalCut AI"><div class="art-label">EDIT <i>•</i> CREATE <i>•</i> EXPORT</div><div class="beta-sticker">BETA<br><small>BUILD</small></div></div></div>
+    </section>
+
+    <section class="section container source-section" id="source">
+      <div class="section-heading reveal"><div><div class="eyebrow">SOURCE / OPEN SOURCE</div><h2>Nie musisz wierzyć<br><span>na słowo. Sprawdź kod.</span></h2></div><p>Przeglądaj pliki aplikacji i strony, kopiuj pojedyncze pliki albo pobierz cały projekt. Kod źródłowy jest publikowany jawnie.</p></div>
+      <div class="source-layout reveal">
+        <aside class="source-intro"><div class="source-mark">{ }</div><div class="source-mini-label">OTWARTY KOD</div><h3>Przejrzysty projekt.</h3><p>Oryginalny kod projektu jest udostępniony na licencji MIT. To ułatwia sprawdzanie, kopiowanie i modyfikowanie kodu zgodnie z warunkami licencji.</p><a class="button primary source-download" href="downloads/LocalCutAI-full-source.zip" download>Pobierz pełny kod <span class="button-arrow">↓</span></a><div class="license-note"><b>MIT · open source</b><span>Licencja obejmuje oryginalny kod projektu. Biblioteki, FFmpeg, głosy i modele AI zachowują własne licencje i warunki.</span><a href="source/LocalCutAI/LICENSE" target="_blank" rel="noopener">Otwórz LICENSE ↗</a><a href="source/LocalCutAI/THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener">Zależności i licencje ↗</a></div><div class="source-more-downloads"><a href="downloads/LocalCutAI-source.zip" download>Pobierz tylko kod aplikacji ↗</a><a href="downloads/LocalCutAI-website-source.zip" download>Pobierz tylko kod strony WWW ↗</a></div><div class="repo-note"><span class="green-dot"></span>Ta strona nie wysyła Twoich plików wideo ani nie uruchamia kodu z przeglądarki.</div></aside>
+        <div class="source-viewer"><div class="source-toolbar"><div class="source-toolbar-label"><span class="source-live-dot"></span> SOURCE EXPLORER</div><label for="source-file">Plik źródłowy</label><select id="source-file" aria-label="Wybierz plik kodu"><option>Ładowanie listy plików…</option></select><button class="copy-code" id="copy-source" type="button">Kopiuj plik</button></div><div class="source-filepath" id="source-filepath">source/LocalCutAI/README_PL.md</div><pre class="source-code" id="source-code"><code>Ładowanie kodu źródłowego…</code></pre><div class="source-footer"><p id="source-status" role="status">Przeglądarka źródeł ładuje pliki z folderu source/.</p><span>UTF-8 · PLAIN TEXT</span></div></div>
+      </div>
+    </section>
+
+    <section class="section container faq" id="faq"><div class="section-heading reveal"><div><div class="eyebrow">FAQ</div><h2>Najczęstsze pytania.</h2></div></div><div class="faq-list reveal"><details><summary>Czy LocalCut AI jest w fazie beta?</summary><p>Tak. To wersja beta, więc funkcje mogą mieć ograniczenia. Przetestuj wynik na krótkim filmie i zachowaj kopię oryginalnego materiału.</p></details><details><summary>Czy aplikacja wymaga karty NVIDIA?</summary><p>Nie. Projekt można uruchomić na CPU. Przetwarzanie może być wolniejsze, a wymagania zależą od wybranego modelu AI.</p></details><details><summary>Czy moje pliki są przesyłane do chmury?</summary><p>Ta strona jest statyczna i nie przesyła plików wideo. Funkcje aplikacji opisane jako lokalne przetwarzają media na komputerze. Pobranie bibliotek i modeli przy pierwszym użyciu może wymagać Internetu.</p></details><details><summary>Co oznacza licencja MIT?</summary><p>Licencja MIT pozwala używać, kopiować, modyfikować i rozpowszechniać oryginalny kod przy zachowaniu informacji licencyjnej. Nie zastępuje licencji zależności, binariów ani modeli AI.</p></details><details><summary>Czy muszę instalować Pythona?</summary><p>Nie. Interpreter Pythona i zależności aplikacji są spakowane w pliku LocalCutAI.exe. Pobierz jednak także osobne archiwum FFmpeg + FFprobe i rozpakuj oba archiwa do tego samego folderu.</p></details><details><summary>Dlaczego są dwa archiwa ZIP?</summary><p>EXE aplikacji oraz narzędzia FFmpeg są dostarczane osobno, żeby pobieranie było wygodniejsze. Rozpakuj oba archiwa do jednego folderu, tak aby LocalCutAI.exe, ffmpeg.exe i ffprobe.exe leżały obok siebie.</p></details><details><summary>Jak uruchomić stronę lokalnie?</summary><p>Rozpakuj paczkę i uruchom w folderze strony polecenie <code>py -3.12 -m http.server 8080</code>, następnie otwórz <code>http://localhost:8080</code>. Wymagane jest HTTP, aby przeglądarka kodu mogła wczytywać pliki źródłowe.</p></details></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#start"><img src="assets/localcutai-logo.svg" alt="" width="34" height="34"><span>LocalCut <b>AI</b></span><span class="beta-mark">BETA</span></a><div class="footer-links"><a href="#funkcje">Funkcje</a><a href="#pobierz">Pobierz</a><a href="#source">Source</a><a href="#faq">FAQ</a></div><span class="copyright">© <span id="year"></span> LocalCut AI · projekt wykonanie hzzZ</span></div><div class="container footer-disclaimer">LocalCut AI nie jest powiązany z Microsoft, DaVinci Resolve, Google ani YouTube. Nazwy i znaki towarowe należą do ich właścicieli.</div></footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Powiększony podgląd interfejsu"><button class="lightbox-close" id="lightbox-close" aria-label="Zamknij podgląd">×</button><img id="lightbox-image" src="" alt="Powiększony podgląd interfejsu"><p>Zrzut z rzeczywistego okna aplikacji • fragment / kolaż</p></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
